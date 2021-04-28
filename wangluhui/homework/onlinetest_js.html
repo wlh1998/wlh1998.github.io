@@ -1,0 +1,227 @@
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <link rel=stylesheet type=text/css href=aboutme_style.css>
+    <script type="text/javascript" src="onlinetest.js"></script>
+    <title>在线测试</title>
+</head>
+
+<body onload="shownowTime();greeting();startTest();usedTime();">
+    <div id="container">
+        <form name="test" action="http://www.example.org/search.aspx" method="get" class="questions">
+            <h1>在线测试</h1>
+            <hr size=1px color=#000000>
+            <div id="banner">
+                <marquee behavior="scroll" direction="left"> <label id="greet"></label>来做个小测试吧，题目是我随便找的，你能做出几道呢？</marquee>
+            </div>
+            <div id="links2">
+                <label id="showtime">显示时间的位置</label>
+                <label id="showusedtime"></label>
+
+            </div>
+            <div id="links">
+                <ul>
+                    <li> <a href="#你的信息">你的信息</a></li>
+                    <li> <a href="#一、单选题">一、单选题</a>
+                        <table>
+                            <tr>
+                                <td><a href="#1">1</a></td>
+                                <td><a href="#2">2</a></td>
+                                <td><a href="#3">3</a></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li> <a href="#二、多选题">二、多选题</a>
+                        <table>
+                            <tr>
+                                <td><a href="#4">4</a></td>
+                                <td><a href="#5">5</a></td>
+                                <td><a href="#6">6</a></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li> <a href="#三、填空题">三、填空题</a>
+                        <table>
+                            <tr>
+                                <td><a href="#7">7</a></td>
+                                <td><a href="#8">8</a></td>
+                                <td><a href="#9">9</a></td>
+                                <td><a href="#10">10</a></td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li> <a href="#建议">建议</a></li>
+                    <li> <a href="#提交">提交</a></li>
+                </ul>
+            </div>
+            <div id="content" style="margin-right: 200;">
+                <fieldset>
+                    <legend>
+                        <a name="你的信息">
+                            <h2>你的信息</h2>
+                        </a>
+                    </legend>
+                    <ol>
+                        <li>
+                            <h2 class="questions2"><label for="username">你的姓名</label></h2>
+                            <input type="text" name="username" id="username" value="请先输入你的名字" onclick="value =''" />
+                        </li>
+                        <li>
+                            <h2 class="questions2">你的性别</h2>
+                            <select name="selsex">
+                                            <option selected="未选择">未选择</option>
+                                            <option value="男">男</option>
+                                            <option value="女">女</option>
+                                            <option value="其他？">其他？</option>
+                                        </select>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <a name="一、单选题">
+                            <h2>
+                                一、单选题
+                            </h2>
+                        </a>
+                    </legend>
+                    <ol>
+                        <a name="1"> </a>
+                        <li>
+                            <h2 class="questions2">&lt数学&gt 1+1=（）。</h2>
+                            <div class="anser">
+                                <input type="radio" name="problem1" value="A" />A. 1<br/>
+                                <input type="radio" name="problem1" value="B" />B. 2<br/>
+                                <input type="radio" name="problem1" value="C" />C. 3<br/>
+                                <input type="radio" name="problem1" value="D" />D. 我不知道<br/>
+                            </div>
+                        </li>
+                        <a name="2"></a>
+                        <li>
+                            <h2 class="questions2">&ltc语言&gt 下面四组字符串中，都可以用C语言标识符的是（ ）。</h2>
+                            <div class="anser">
+                                <input type="radio" name="problem2" value="A" />A. sign，3mf，a.f，A&B<br/>
+                                <input type="radio" name="problem2" value="B" />B. I\am，scanf，mx_，AMB<br/>
+                                <input type="radio" name="problem2" value="C" />C. if，ty_pe，x1#，5XY<br/>
+                                <input type="radio" name="problem2" value="D" />D. print，_maf，mx_2d，aMb6<br/>
+                            </div>
+                        </li>
+                        <a name="3"></a>
+                        <li>
+                            <h2 class="questions2">&lt高数&gt 满足方程f'(x)=0是函数y=f(x)的（ ）。</h2>
+                            <div class="anser">
+                                <input type="radio" name="problem3" value="A" />A. 极大值点<br/>
+                                <input type="radio" name="problem3" value="B" />B. 极小值点<br/>
+                                <input type="radio" name="problem3" value="C" />C. 驻点<br/>
+                                <input type="radio" name="problem3" value="D" />D. 间断点<br/>
+                            </div>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <a name="二、多选题">
+                            <h2> 二、多选题</h2>
+                        </a>
+                    </legend>
+                    <ol start="4">
+                        <a name="4"></a>
+                        <li>
+                            <h2 class="questions2">&lt形势与政策&gt 两学一做是指（）。</h2>
+                            <div class="anser">
+                                <input type="checkbox" name="problem4" value="A" />A. 学党章党规<br/>
+                                <input type="checkbox" name="problem4" value="B" />B. 学系列讲话<br/>
+                                <input type="checkbox" name="problem4" value="C" />C. 做合格党员<br/>
+                                <input type="checkbox" name="problem4" value="D" />D. 我不知道<br/>
+                            </div>
+                        </li>
+                        <a name="5"></a>
+                        <li>
+                            <h2 class="questions2">&lt科目四&gt 林某驾车以110公里/小时的速度在城市道路行驶，与一辆机动车追尾后弃车逃离被群众拦下。经鉴定，事发时林某血液中的酒精浓度为135.8毫克/百毫升。林某的主要违法行为是什么？</h2>
+                            <div class="anser">
+                                <input type="checkbox" name="problem5" value="A" />A. 醉酒驾驶<br/>
+                                <input type="checkbox" name="problem5" value="B" />B. 超速驾驶<br/>
+                                <input type="checkbox" name="problem5" value="C" />C. 疲劳驾驶<br/>
+                                <input type="checkbox" name="problem5" value="D" />D. 肇事逃逸<br/>
+                            </div>
+                        </li>
+                        <a name="6"></a>
+                        <li>
+                            <h2 class="questions2">&lt数据结构&gt 以下数据结构中哪些是线性结构？</h2>
+                            <div class="anser">
+                                <input type="checkbox" name="problem6" value="A" />A. 队列<br/>
+                                <input type="checkbox" name="problem6" value="B" />B. 栈<br/>
+                                <input type="checkbox" name="problem6" value="C" />C. 线性表<br/>
+                                <input type="checkbox" name="problem6" value="D" />D. 二叉树<br/>
+                            </div>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <a name="三、填空题">
+                            <h2>三、填空题</h2>
+                        </a>
+                    </legend>
+                    <ol start="7">
+                        <a name="7"></a>
+                        <li>
+                            <h2 class="questions2">&lt送分题1&gt 1-1=？</h2>
+                            <div class="anser">
+                                <input type="text" name="problem7" value="答案请只包含数字" onclick="value =''" /><br/>
+                            </div>
+                        </li>
+                        <a name="8"></a>
+                        <li>
+                            <h2 class="questions2">&lt送分题2&gt 1*1=？</h2>
+                            <div class="anser">
+                                <input type="text" name="problem8" value="答案请只包含数字" onclick="value =''" /><br/>
+                            </div>
+                        </li>
+                        <a name="9"></a>
+                        <li>
+                            <h2 class="questions2">&lt送分题3&gt 1/1=？</h2>
+                            <div class="anser">
+                                <input type="text" name="problem9" value="答案请只包含数字" onclick="value =''" /><br/>
+                            </div>
+                        </li>
+                        <a name="10"></a>
+                        <li>
+                            <h2 class="questions2">&lt送分题4&gt 2+2=？</h2>
+                            <div class="anser">
+                                <input type="text" name="problem10" value="答案请只包含数字" onclick="value =''" /><br/>
+                            </div>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <a name="建议">
+                            <h2>建议</h2>
+                        </a>
+                    </legend>
+                    <h2 class="questions2">&lt此题可不填&gt 你对这个在线测试有什么建议吗</h2>
+
+                    <textarea rows="20" cols="50" onclick="value =''">随便说点什么吧</textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <a name="提交">
+                            <h2>提交</h2>
+                        </a>
+                    </legend>
+                    <input type="button" value="提交" onclick="usedTime2()" />
+                </fieldset>
+                </ol>
+        </form>
+        </div>
+
+        <div id="footer">
+            本网站由王潞辉设计
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+h1 {
+    font-family: "times new roman", "楷体", "consolas";
+    font-size: 80px;
+    font-style: oblique;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: "楷体", "宋体", "times new roman";
+    font-size: 50px;
+    font-weight: bolder;
+    background-color: #eeeeee;
+}
+
+h3 {
+    font-family: "楷体", "宋体", "consolas";
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+p {
+    font-family: "楷体", "宋体", "times new roman";
+    font-size: 25px;
+    text-indent: 50px;
+}
+
+input[type="text"],
+input[type="password"] {
+    height: 30px;
+    width: 200px;
+}
+
+input[type="text"],
+textarea,
+input[type="password"] {
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+a {
+    font-weight: bold;
+    transition: width 2s;
+}
+
+a:link {
+    color: #3399CC;
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+a:visited {
+    color: #9999cc;
+    background-color: #3399CC;
+    text-decoration: none;
+}
+
+a:active {
+    color: #FFFFFF;
+    background-color: #3399CC;
+    text-decoration: underline;
+}
+
+a:link:hover {
+    background-color: #e9e9e9;
+    text-decoration: underline;
+}
+
+body {
+    position: absolute;
+    top: 00;
+    right: 100;
+    bottom: 100;
+    left: 100;
+    /* background-color: #CCFFFF; */
+    background-color: #dddddd;
+    background-attachment: fixed;
+}
+
+h1,
+h2 {
+    /* color: #3399CC; */
+    color: #000000;
+}
+
+#banner,
+#content,
+#links {
+    border-color: #eeeeee;
+    border-style: solid;
+}
+
+#content {
+    margin-left: 200;
+    background-color: #ffffff;
+    padding: 30;
+    margin-right: 100px;
+    border-radius: 24px;
+}
+
+hr {
+    margin: 20;
+    clear: both;
+}
+
+ol.am {
+    list-style-position: outside;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.50);
+    font-family: "仿宋", "times new roman";
+    font-size: 25px;
+    padding: 0px 30px 30px 50px;
+}
+
+table {
+    font-family: "楷体";
+    font-size: 25px;
+    border-collapse: collapse;
+}
+
+#links td {
+    width: 30;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1 solid #000000;
+    border-spacing: 20px;
+}
+
+#footer {
+    font-size: 20px;
+    font-family: "华文新魏", "times new roman";
+    text-align: center;
+    clear: both;
+}
+
+#links {
+    width: 180px;
+    position: fixed;
+    background-color: #FFFFFF;
+    font-size: 25px;
+    font-family: "楷体", "times new roman";
+    list-style-position: outside;
+    list-style-type: square;
+    margin-left: 0;
+    border-radius: 12px;
+}
+
+#banner {
+    font-size: 50;
+    font-family: "楷体", "times new roman";
+    color: #3399CC;
+    margin-top: 30;
+    margin-bottom: 30;
+}
+
+img.photo {
+    width: 200px;
+    height: 300px;
+}
+
+hr.photo {
+    margin: 50;
+    clear: both;
+}
+
+form.questions {
+    font-family: "times new roman", "楷体";
+    font-size: 30;
+}
+
+h2.questions {
+    font-family: "times new roman", "楷体";
+    font-size: 40;
+    font-weight: bolder;
+    color: #000000;
+}
+
+h2.questions2 {
+    font-family: "times new roman", "楷体";
+    font-size: 30;
+    font-weight: bolder;
+    color: #000000;
+}
+
+ol.questions {
+    list-style-position: outside;
+}
+
+.anser {
+    padding-left: 30;
+}
+
+.button {
+    background-color: #ffffff;
+    border-color: #ccffff;
+    color: black;
+    font-family: "楷体";
+    margin-left: 250px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 200px;
+    height: 100px;
+}
+
+.button:hover {
+    background-color: #ccFFFF;
+}
